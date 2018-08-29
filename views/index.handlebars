@@ -1,0 +1,33 @@
+<h2>Burger</h2>
+
+<ul>
+  {{#each burgers}}
+    {{#unless devoured}}
+      {{> burgers/burger-block devoured=false}}
+      <button data-planid="{{this.id}}" class="devourBurger">Delete!</button>
+    {{/unless}}
+  {{/each}}
+</ul>
+
+
+
+<ul>
+  {{#each burgers}}
+    {{#unless devoured}}
+      {{> burgers/burger-block devoured=true}}
+    {{/unless}}
+  {{/each}}
+</ul>
+
+<h2></h2>
+
+<form id="addburger" class="create-form">
+
+  <textarea type="text" for="burger">Burger name:</label>
+    <input type="text" id="burger" name="name">
+  </div>
+
+
+
+  <button type="submit">Add Burger</button>
+</form>
