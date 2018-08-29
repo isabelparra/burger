@@ -1,0 +1,32 @@
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+h2, h4 {
+    text-align: center;
+}
+
+#avail {
+    display: inline;
+    float: left;
+   
+}
+#devoured {
+    display: inline;
+    float: right;
+   
+}
+
+#addBurger {
+    clear: both;
+}
+
+input, button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
