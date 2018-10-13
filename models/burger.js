@@ -6,15 +6,12 @@ var burger = {
         orm.all("burgers", function(res) {
             cb(res);
         })
-
-},
-
+    },
     // The variable cols and vals are arrays.
-    // create: function(cols, vals, cb) {
-    //     orm.create("burgers", function(res) {
-    //         cb(res);
-    //  });
-    // }, 
+    create: function(name, cb) {
+        orm.create("burgers", name, cb);
+    },
+    
     update: function(id, cb) {
         orm.update("burgers", id, cb);
     }
